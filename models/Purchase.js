@@ -1,0 +1,39 @@
+const mongoose = require('mongoose');
+const purchaseSchema = new mongoose.Schema({
+    ProductName:{
+        type:String,
+        trim:true
+    },
+    Producttype:{
+        type:String,
+        trim:true
+    },
+    date:{
+        type:Number,
+        trim:true
+    },
+    time:{
+        type:Number,
+        trim:true
+    },
+    dealerName:{
+        type:String,
+        trim:true
+    },
+    telephone:{
+        type:String,
+        trim:true
+    },
+    tonnage:{
+        type:Number,
+        trim:true
+    },
+    amountpaid:{
+        type:String,
+        trim:true
+    },
+    branch:{
+        type:String,
+    }
+});
+module.exports = mongoose.model('Purchase',purchaseSchema);

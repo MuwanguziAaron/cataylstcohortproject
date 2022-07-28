@@ -1,0 +1,128 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title KGL features
+  link(href='assets/img/favicon.png' rel='icon')
+  link(href='assets/img/apple-touch-icon.png' rel='apple-touch-icon')
+  // Google Fonts
+  link(href='https://fonts.googleapis.com/css?family=Montserrat:300,400,500,700|Open+Sans:300,300i,400,400i,700,700i' rel='stylesheet')
+  // Vendor CSS Files
+  link(href='assets/vendor/aos/aos.css' rel='stylesheet')
+  link(href='assets/vendor/bootstrap/css/bootstrap.min.css' rel='stylesheet')
+  link(href='assets/vendor/bootstrap-icons/bootstrap-icons.css' rel='stylesheet')
+  link(href='assets/vendor/glightbox/css/glightbox.min.css' rel='stylesheet')
+  // Template Main CSS File
+  link(href='assets/css/style.css' rel='stylesheet')
+section#features
+  .container(data-aos='fade-up')
+    .row
+      .col-lg-8.offset-lg-4
+        .section-header
+          h3.section-title  Features
+          span.section-divider
+      .col-lg-4.col-md-5.features-img
+        img(src='assets/img/pexels-pixabay-255469.jpg' alt='' data-aos='fade-right')
+      .col-lg-8.col-md-7
+        .row
+          .col-lg-6.col-md-6.box(data-aos='fade-up')
+            .icon
+              i.bi.bi-briefcase
+            h4.title
+              a(href='') Administration
+            p.description Mr.Orbam the canpany director 
+            p A manger who only records the produce procured.
+            p And two attendants in the two respective branches
+          .col-lg-6.col-md-6.box(data-aos='fade-up')
+            .icon
+              i.bi.bi-card-checklist
+            h4.title
+              a(href='') Deferred payments
+            p.description Only trust worthy buyers are offered a chance to take produce oon credit.
+            p But they should be separatly recorded
+          .col-lg-6.col-md-6.box(data-aos='fade-up' dat-aos-delay='100')
+            .icon
+              i.bi.bi-binoculars
+            h4.title
+              a(href='') Sales
+            p.description
+              | The sales agents are supposed to record all sales in their respwctive branches
+              br
+              |                           including,
+              ul
+                li Name of the buyer
+                li tonnages
+                li date
+                li And amount paid
+          .col-lg-6.col-md-6.box(data-aos='fade-up' data-aos-delay='100')
+            .icon
+              i.bi.bi-brightness-high
+            h4.title
+              a(href='') Business rules
+            p.description
+              ul
+                li Only products in stock should be sold(once sold, the manager should be notified.
+                li For any sold produce,its tonnage is reduced.
+                li Prices are determned by the manager and the pre-population
+                li No sales agents is allowed to record anyproduce entry
+                li Only the manager should record sales of the produce
+                li Only Mr. Orban is allowed to view sales made in all the branches
+section#advanced-features
+  .features-row.section-bg(data-aos='fade-up')
+    .container
+      .row
+        .col-md-4-lg-4 
+          img.advanced-feature-img-right.wow.fadeInRight(src='assets/img/gallery/pexels-rodnae-productions-7821572.jpg' alt='')
+          .container
+            h2 credits form
+            form(name='debts')
+            .row 
+              .col 
+                label(for='name') Name of the buyer[not less than 2characters]:
+                br
+                input#creditor(type='alpha-numeric' onblur='owe()')
+                br
+              .col   
+                label(for='national') National id
+                br
+                input(type='text')
+                br
+            .row 
+              .col   
+                label(for='place') Location
+                br
+                input#place(type='text' onblur='')
+              .col   
+                label(for='qty') Tonnage
+                br
+                input#zip(type='text' name='qty' onblur='qauntity()')
+                br
+            .row 
+              .col 
+                label(for='phone') Time
+                br
+                input#phone(type='time' name='phone')
+                br
+              .col   
+                label(for='agents') Sales agent
+                br
+                input#sales(type='agent' onblur='agent()')
+                br
+            .row 
+                button(type='order' href='/') Submit
+
+          
+  .features-row(data-aos='fade-up')
+    .container
+      .row
+        .col-md-6
+          img.advanced-feature-img-left(src='assets/img/gallery/pexels-dapurmelodi-699405.jpg' alt='')
+        .col-md-6
+          img.advanced-feature-img-left(src='assets/img/gallery/pexels-nav-photography-5458363.jpg' alt='')
+script(src='assets/vendor/aos/aos.js')
+script(src='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')
+script(src='assets/vendor/glightbox/js/glightbox.min.js')
+script(src='assets/vendor/php-email-form/validate.js')
+// Template Main JS File
+script(src='assets/js/main.js')
